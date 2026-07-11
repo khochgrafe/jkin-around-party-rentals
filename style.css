@@ -761,6 +761,16 @@ transform:translateY(0);
 
 }
 
+.fade-section {
+
+    opacity: 0;
+
+    transform: translateY(30px);
+
+    transition: all .8s ease;
+
+}
+
 }
 
 
