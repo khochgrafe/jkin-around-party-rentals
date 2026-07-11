@@ -395,6 +395,31 @@ section {
 
 }
 
+.rental-image {
+
+    height:250px;
+
+    overflow:hidden;
+
+    border-radius:15px;
+
+    margin-bottom:20px;
+
+}
+
+
+.rental-image img {
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    display:block;
+
+}
+
 /* Movie Section */
 
 
