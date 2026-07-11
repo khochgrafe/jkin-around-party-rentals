@@ -1,5 +1,3 @@
-/* JK'in Around Party Rentals - Main Design */
-
 * {
     margin: 0;
     padding: 0;
@@ -13,50 +11,52 @@ html {
 
 
 body {
-    font-family: 'Montserrat', sans-serif;
-    color: #1c1c1c;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #1f2937;
+    background: #f7f9fc;
     line-height: 1.6;
-    background: #ffffff;
-}
-
-
-:root {
-
-    --blue: #0057b8;
-    --dark-blue: #003b7a;
-    --silver: #d9d9d9;
-    --gold: #f5c542;
-    --light: #f7f9fc;
-
 }
 
 
 
+.hero {
 
-/* Navigation */
+    min-height: 90vh;
 
+    background:
+    linear-gradient(
+    rgba(0,80,170,.75),
+    rgba(0,30,80,.85)
+    ),
+    url("images/DoubleWaterSlide.jpg");
 
-header {
+    background-size: cover;
 
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
+    background-position: center;
+
+    color:white;
 
 }
 
 
-nav {
 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.navbar {
 
-    padding: 20px 7%;
+    display:flex;
 
-    background: rgba(0,0,0,0.25);
+    justify-content:space-between;
 
-    backdrop-filter: blur(8px);
+    align-items:center;
+
+    padding:25px 8%;
+
+    background:rgba(0,0,0,.25);
+
+    position:sticky;
+
+    top:0;
+
+    z-index:100;
 
 }
 
@@ -64,136 +64,85 @@ nav {
 
 .logo {
 
-    color:white;
-    font-size:2rem;
-    font-weight:800;
-    line-height:1;
+    display:flex;
+
+    flex-direction:column;
+
+    font-weight:bold;
 
 }
+
 
 
 .logo span {
 
-    color:var(--gold);
+    font-size:2rem;
+
+    letter-spacing:1px;
 
 }
+
 
 
 .logo small {
 
-    display:block;
-    font-size:.65rem;
-    letter-spacing:3px;
+    color:#ffd700;
+
+    font-size:1rem;
 
 }
 
 
 
 
-nav ul {
+.nav-links {
 
     display:flex;
-    list-style:none;
-    gap:30px;
+
+    gap:25px;
 
 }
 
 
 
-nav a {
+.nav-links a {
 
     color:white;
+
     text-decoration:none;
-    font-weight:600;
 
-}
-
-
-
-nav a:hover {
-
-    color:var(--gold);
+    font-weight:bold;
 
 }
 
 
 
 
-
-/* Hero */
-
-
-.hero {
-
-    min-height:100vh;
-
-    background:
-
-    linear-gradient(
-    rgba(0,50,120,.65),
-    rgba(0,20,60,.75)
-    ),
-
-    url('https://images.unsplash.com/photo-1530103862676-de8c9debad1d?auto=format&fit=crop&w=1600&q=80');
-
-    background-size:cover;
-
-    background-position:center;
-
-    display:flex;
-
-    align-items:center;
-
-    justify-content:center;
+.hero-content {
 
     text-align:center;
 
-    color:white;
+    padding:120px 20px;
 
 }
 
 
 
-.hero-overlay {
+.hero-content h1 {
 
-    padding:40px;
+    font-size:clamp(2.5rem,6vw,4.5rem);
 
-    animation:fadeIn 1.5s ease;
-
-}
-
-
-
-.hero h1 {
-
-    font-size:clamp(3rem,7vw,5rem);
-
-    font-weight:800;
+    line-height:1.1;
 
 }
 
 
 
-.hero p {
+.hero-content p {
 
     font-size:1.3rem;
 
-    margin:15px 0;
-
-}
-
-
-.hero-small {
-
-    font-weight:600;
-
-}
-
-
-
-.hero-buttons {
-
-    margin-top:30px;
+    margin:25px 0;
 
 }
 
@@ -210,11 +159,9 @@ nav a:hover {
 
     text-decoration:none;
 
-    font-weight:700;
+    font-weight:bold;
 
     margin:10px;
-
-    transition:.3s;
 
 }
 
@@ -222,7 +169,7 @@ nav a:hover {
 
 .primary {
 
-    background:var(--gold);
+    background:#ffd700;
 
     color:#111;
 
@@ -232,42 +179,43 @@ nav a:hover {
 
 .secondary {
 
-    background:white;
+    border:2px solid white;
 
-    color:var(--blue);
-
-}
-
-
-
-.btn:hover {
-
-    transform:translateY(-4px);
+    color:white;
 
 }
 
 
 
+.section {
 
+    max-width:1200px;
 
-/* General Sections */
+    margin:auto;
 
-
-section {
-
-    padding:80px 7%;
+    padding:70px 20px;
 
 }
 
 
 
-.section-title {
+.section h2 {
 
     text-align:center;
 
     font-size:2.5rem;
 
-    color:var(--dark-blue);
+    margin-bottom:20px;
+
+    color:#004aad;
+
+}
+
+
+
+.subtitle {
+
+    text-align:center;
 
     margin-bottom:40px;
 
@@ -275,225 +223,7 @@ section {
 
 
 
-.intro {
-
-    text-align:center;
-
-    max-width:900px;
-
-    margin:auto;
-
-}
-
-
-
-
-/* Stats */
-
-
-.stats {
-
-    display:grid;
-
-    grid-template-columns:repeat(4,1fr);
-
-    background:var(--blue);
-
-    color:white;
-
-    text-align:center;
-
-}
-
-
-
-.stats strong {
-
-    font-size:2.5rem;
-
-}
-
-
-
-.stats h3 {
-
-    font-size:1.5rem;
-
-}
-
-
-
-
-
-
-/* Cards */
-
-
-.cards {
-
-    display:grid;
-
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-
-    gap:30px;
-
-}
-
-
-
-.card {
-
-    background:white;
-
-    padding:30px;
-
-    border-radius:20px;
-
-    box-shadow:0 10px 30px rgba(0,0,0,.1);
-
-    transition:.3s;
-
-}
-
-
-
-.card:hover {
-
-    transform:translateY(-8px);
-
-}
-
-
-
-.card h3 {
-
-    color:var(--blue);
-
-    margin-bottom:15px;
-
-}
-
-
-
-.image-placeholder {
-
-    height:150px;
-
-    background:linear-gradient(135deg,var(--blue),#4ca5ff);
-
-    border-radius:15px;
-
-    display:flex;
-
-    justify-content:center;
-
-    align-items:center;
-
-    font-size:4rem;
-
-    margin-bottom:20px;
-
-}
-
-.rental-image {
-
-    height:250px;
-
-    overflow:hidden;
-
-    border-radius:15px;
-
-    margin-bottom:20px;
-
-}
-
-
-.rental-image img {
-
-    width:100%;
-
-    height:100%;
-
-object-fit:contain;
-    
-    display:block;
-
-}
-
-/* Movie Section */
-
-
-.movie {
-
-    background:
-    linear-gradient(
-    rgba(0,30,80,.9),
-    rgba(0,10,30,.95)
-    );
-
-    color:white;
-
-    text-align:center;
-
-}
-
-
-
-.movie h2 {
-
-    font-size:3rem;
-
-}
-
-
-
-.movie-box {
-
-    max-width:700px;
-
-    margin:40px auto 0;
-
-    background:white;
-
-    color:#222;
-
-    padding:40px;
-
-    border-radius:25px;
-
-    box-shadow:0 15px 40px rgba(0,0,0,.3);
-
-}
-
-
-
-.movie-box h3 {
-
-    color:var(--blue);
-
-    margin:20px 0;
-
-}
-
-
-
-/* Why Section */
-
-
-.why {
-
-    background:var(--light);
-
-}
-
-
-
-
-
-/* Gallery */
-
-
-.gallery {
+.feature-grid {
 
     display:grid;
 
@@ -501,35 +231,49 @@ object-fit:contain;
 
     gap:25px;
 
+    margin-top:40px;
+
 }
 
 
 
-.gallery div {
+.feature {
 
-    height:250px;
+    background:white;
 
-    background:linear-gradient(
-    135deg,
-    #0057b8,
-    #78c2ff
-    );
+    padding:30px;
 
     border-radius:20px;
 
-    display:flex;
+    text-align:center;
 
-    align-items:center;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
 
-    justify-content:center;
+}
 
-    flex-direction:column;
 
-    color:white;
 
-    font-size:4rem;
+.rental-grid {
 
-    font-weight:700;
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+
+    gap:30px;
+
+}
+
+
+
+.rental-card {
+
+    background:white;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.12);
 
     transition:.3s;
 
@@ -537,65 +281,206 @@ object-fit:contain;
 
 
 
-.gallery div:hover {
+.rental-card:hover {
 
-    transform:scale(1.05);
-
-}
-
-
-
-.gallery p {
-
-    font-size:1.2rem;
-
-    margin-top:10px;
+    transform:translateY(-8px);
 
 }
 
 
 
-
-
-
-
-/* Quote Form */
-
-
-.form-box {
-
-    max-width:700px;
-
-    margin:auto;
-
-    background:white;
-
-    padding:40px;
-
-    border-radius:25px;
-
-    box-shadow:0 15px 40px rgba(0,0,0,.12);
-
-}
-
-
-
-form input,
-form select,
-form textarea {
-
+.rental-card img {
 
     width:100%;
 
-    padding:15px;
+    height:260px;
 
-    margin-bottom:18px;
+    object-fit:contain;
+
+    background:#fff;
+
+}
+
+
+
+.rental-card h3 {
+
+    padding:15px 20px 5px;
+
+    color:#004aad;
+
+}
+
+
+
+.rental-card p {
+
+    padding:0 20px;
+
+}
+
+
+
+.rental-card strong {
+
+    display:block;
+
+    padding:15px 20px 25px;
+
+    color:#e63946;
+
+}
+.movie-content {
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+
+    gap:40px;
+
+    align-items:center;
+
+}
+
+
+
+.movie-content img {
+
+    width:100%;
+
+    max-height:450px;
+
+    object-fit:contain;
+
+    background:white;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.12);
+
+}
+
+
+
+.movie-info {
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+
+
+
+.movie-info ul {
+
+    margin:20px;
+
+}
+
+
+
+.snack-box {
+
+    background:#eef6ff;
+
+    padding:20px;
+
+    border-radius:15px;
+
+    margin-top:20px;
+
+}
+
+
+
+
+
+.gallery-grid {
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+    gap:20px;
+
+}
+
+
+
+.gallery-grid img {
+
+    width:100%;
+
+    height:220px;
+
+    object-fit:contain;
+
+    background:white;
+
+    border-radius:15px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.1);
+
+}
+
+
+
+
+.policy-box {
+
+    background:white;
+
+    padding:35px;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+
+
+
+.policy-box li {
+
+    margin:12px 0;
+
+}
+
+
+
+
+.quote-form {
+
+    max-width:600px;
+
+    margin:auto;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:15px;
+
+}
+
+
+
+.quote-form input,
+
+.quote-form select,
+
+.quote-form textarea {
+
+    padding:15px;
 
     border-radius:12px;
 
-    border:1px solid #ddd;
-
-    font-family:inherit;
+    border:1px solid #ccc;
 
     font-size:1rem;
 
@@ -603,7 +488,7 @@ form textarea {
 
 
 
-form textarea {
+.quote-form textarea {
 
     min-height:150px;
 
@@ -611,7 +496,8 @@ form textarea {
 
 
 
-form button {
+
+.quote-form button {
 
     border:none;
 
@@ -624,168 +510,66 @@ form button {
 
 
 
-
-
-
-/* Contact */
-
-
 .contact {
 
     text-align:center;
 
-    background:#f7f9fc;
-
 }
 
 
 
-.contact-buttons {
+.contact p {
 
-    margin-top:30px;
+    font-size:1.2rem;
+
+    margin:10px;
 
 }
 
-
-
-
-
-/* Footer */
 
 
 footer {
 
-    background:#001b3a;
+    background:#002855;
 
     color:white;
 
     text-align:center;
 
-    padding:50px 20px;
+    padding:30px;
 
 }
 
 
 
-.footer-logo {
-
-    font-size:2.2rem;
-
-    font-weight:800;
-
-}
-
-
-
-.footer-logo small {
-
-    display:block;
-
-    letter-spacing:3px;
-
-    font-size:.8rem;
-
-}
-
-
-
-.copyright {
-
-    margin-top:20px;
-
-    color:#aaa;
-
-}
-
-
-
-
-
-/* Back To Top */
-
-
-.top-button {
-
-    position:fixed;
-
-    right:25px;
-
-    bottom:25px;
-
-    width:50px;
-
-    height:50px;
-
-    border-radius:50%;
-
-    background:var(--gold);
-
-    color:#111;
-
-    display:flex;
-
-    align-items:center;
-
-    justify-content:center;
-
-    text-decoration:none;
-
-    font-size:1.5rem;
-
-    font-weight:bold;
-
-}
-
-
-
-
-
-/* Animation */
-
-
-@keyframes fadeIn {
-
-from {
-
-opacity:0;
-
-transform:translateY(30px);
-
-}
-
-to {
-
-opacity:1;
-
-transform:translateY(0);
-
-}
 
 .fade-section {
 
-    opacity: 0;
+    opacity:0;
 
-    transform: translateY(30px);
+    transform:translateY(30px);
 
-    transition: all .8s ease;
-
-}
+    transition:.8s;
 
 }
 
 
 
+.fade-section.visible {
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
 
 
 
 
-/* MOBILE DESIGN */
+@media(max-width:768px) {
 
 
-@media(max-width:768px){
-
-
-nav {
+.navbar {
 
     flex-direction:column;
 
@@ -794,102 +578,38 @@ nav {
 }
 
 
-nav ul {
+
+.nav-links {
 
     flex-wrap:wrap;
 
     justify-content:center;
 
-    gap:15px;
-
-}
-
-
-.logo {
-
-    font-size:1.7rem;
-
 }
 
 
 
-section {
+.hero-content {
 
-    padding:60px 5%;
+    padding:80px 20px;
 
 }
 
 
 
-.hero h1 {
+.hero-content h1 {
 
-    font-size:3rem;
-
-}
-
-
-
-.hero p {
-
-    font-size:1rem;
+    font-size:2.5rem;
 
 }
 
 
 
-.stats {
+.rental-card img {
 
-    grid-template-columns:repeat(2,1fr);
-
-}
-
-
-
-.cards {
-
-    grid-template-columns:1fr;
+    height:220px;
 
 }
 
-
-
-.movie h2 {
-
-    font-size:2.2rem;
-
-}
-
-
-
-.movie-box {
-
-    padding:25px;
-
-}
-
-
-
-.gallery {
-
-    grid-template-columns:1fr;
-
-}
-
-
-
-.btn {
-
-    width:90%;
-
-}
-
-
-
-}
-
-
-.rental-image:has(img[src*="WhackyMan"]) {
-
-    height:350px;
 
 }
