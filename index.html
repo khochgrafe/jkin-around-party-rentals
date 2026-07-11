@@ -1,271 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>JK'in Around Party Rentals</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
-<style>
+<title>JK'in Around Party Rentals | Listowel Ontario</title>
 
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Montserrat',sans-serif;
-}
+<meta name="description" content="JK'in Around Party Rentals provides bounce castles, waterslides, outdoor movie nights and event rentals in Listowel, North Perth and surrounding communities.">
 
-html{
-scroll-behavior:smooth;
-}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-body{
-background:#f5f9ff;
-color:#333;
-line-height:1.6;
-}
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-header{
-background:linear-gradient(135deg,#005bbb,#3a7bd5);
-color:white;
-padding:20px 8%;
-position:sticky;
-top:0;
-z-index:1000;
-box-shadow:0 4px 10px rgba(0,0,0,.15);
-}
-
-nav{
-display:flex;
-justify-content:space-between;
-align-items:center;
-}
-
-.logo{
-
-font-size:2.8rem;
-
-font-weight:800;
-
-letter-spacing:-1px;
-
-text-shadow:2px 3px 5px rgba(0,0,0,.25);
-
-}
-
-nav ul{
-display:flex;
-gap:30px;
-list-style:none;
-}
-
-nav a{
-color:white;
-text-decoration:none;
-font-weight:600;
-transition:.3s;
-}
-
-nav a:hover{
-color:#ffd54f;
-}
-
-.hero{
-
-height:90vh;
-
-display:flex;
-justify-content:center;
-align-items:center;
-text-align:center;
-
-background:
-
-linear-gradient(rgba(0,70,150,.65),rgba(0,70,150,.65)),
-
-url('https://images.unsplash.com/photo-1530103862676-de8c9debad1d?auto=format&fit=crop&w=1600&q=80');
-  
-background-size:cover;
-background-position:center;
-
-color:white;
-
-padding:20px;
-
-}
-
-.hero h1{
-
-font-size:4rem;
-margin-bottom:20px;
-
-}
-
-.hero p{
-
-font-size:1.3rem;
-max-width:800px;
-margin:auto;
-
-}
-
-.button{
-
-display:inline-block;
-
-margin-top:35px;
-
-padding:16px 38px;
-
-background:#ffd54f;
-
-color:#003366;
-
-text-decoration:none;
-
-font-weight:bold;
-
-border-radius:50px;
-
-transition:.3s;
-
-}
-
-.button:hover{
-
-transform:translateY(-4px);
-
-background:white;
-
-}
-
-section{
-
-padding:80px 10%;
-
-}
-
-.section-title{
-
-text-align:center;
-
-font-size:2.6rem;
-
-color:#005bbb;
-
-margin-bottom:45px;
-
-}
-
-.cards{
-
-display:grid;
-
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-
-gap:30px;
-
-}
-
-.card{
-
-background:white;
-
-padding:30px;
-
-border-radius:18px;
-
-box-shadow:0 12px 25px rgba(0,0,0,.08);
-
-transition:.3s;
-
-}
-
-.card:hover{
-
-transform:translateY(-8px);
-
-}
-
-.card h3{
-
-margin-bottom:15px;
-
-color:#005bbb;
-
-}
-
-.highlight{
-
-background:#005bbb;
-
-color:white;
-
-border-radius:20px;
-
-padding:60px;
-
-text-align:center;
-
-}
-
-.highlight h2{
-
-font-size:2.5rem;
-
-margin-bottom:20px;
-
-}
-
-footer{
-
-background:#003366;
-
-color:white;
-
-padding:40px;
-
-text-align:center;
-
-}
-
-footer p{
-
-margin:8px 0;
-
-}
-
-</style>
+<link rel="stylesheet" href="style.css">
 
 </head>
 
+
 <body>
+
 
 <header>
 
 <nav>
 
 <div class="logo">
-
-<span style="color:#ffd54f;">JK'in</span> Around
-
-<br>
-
-<span style="font-size:1.3rem;color:white;">PARTY RENTALS</span>
-
+<span>JK'in</span> Around
+<small>PARTY RENTALS</small>
 </div>
+
 
 <ul>
 
-<li><a href="#">Home</a></li>
-
+<li><a href="#home">Home</a></li>
 <li><a href="#rentals">Rentals</a></li>
-
 <li><a href="#gallery">Gallery</a></li>
-
 <li><a href="#movie">Movie Nights</a></li>
-
-<li><a href="#contact">Request a Quote</a></li>
+<li><a href="#quote">Request Quote</a></li>
 
 </ul>
 
@@ -273,261 +47,255 @@ margin:8px 0;
 
 </header>
 
-<section class="hero">
+
+
+
+<section class="hero" id="home">
+
+
+<div class="hero-overlay">
+
+
+<h1>
+The Party Starts Here
+</h1>
+
+
+<p>
+Making Memories One Party At A Time
+</p>
+
+
+<p class="hero-small">
+🎈 Bounce Castles • 💦 Water Slides • 🎬 Outdoor Movie Nights
+</p>
+
+
+<p>
+Serving Listowel, North Perth & Surrounding Communities
+</p>
+
+
+<div class="hero-buttons">
+
+<a href="#quote" class="btn primary">
+Request A Quote
+</a>
+
+
+<a href="#rentals" class="btn secondary">
+View Rentals
+</a>
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+<section class="intro">
+
+
+<h2>
+Welcome To JK'in Around!
+</h2>
+
+
+<p>
+
+We are a locally owned party rental company bringing fun, excitement, and unforgettable memories to families, celebrations, and events throughout Listowel and surrounding communities.
+
+</p>
+
+
+<p>
+
+From backyard birthdays to community events, we make it easy to bring the party to you!
+
+</p>
+
+
+</section>
+
+
+
+
+
+<section class="stats">
+
 
 <div>
-
-<h1>Bringing the Party to You!</h1>
-
-<p>
-
-Serving Listowel, North Perth, and surrounding communities with fun, safe and unforgettable party rentals.
-
-</p>
-
-<a href="#contact" class="button">Request a Quote</a>
-
+<strong>🎈</strong>
+<h3>Multiple</h3>
+<p>Inflatable Options</p>
 </div>
+
+
+<div>
+<strong>🎬</strong>
+<h3>Outdoor</h3>
+<p>Movie Experiences</p>
+</div>
+
+
+<div>
+<strong>📍</strong>
+<h3>Local</h3>
+<p>North Perth Service</p>
+</div>
+
+
+<div>
+<strong>😊</strong>
+<h3>Endless</h3>
+<p>Party Memories</p>
+</div>
+
 
 </section>
-<section id="about">
 
-<h2 class="section-title">Welcome to JK'in Around!</h2>
 
-<div class="cards">
-
-<div class="card">
-
-<h3>🎈 Inflatable Rentals</h3>
-
-<p>
-
-Whether you're planning a birthday party, school event, family reunion, fundraiser, or community celebration, our inflatables bring hours of fun for kids (and kids at heart!).
-
-</p>
-
-</div>
-
-<div class="card">
-
-<h3>🚚 Delivery Options</h3>
-
-<p>
-
-Choose the option that works best for you:
-
-<br><br>
-
-✔ Delivery with setup instructions included
-
-<br><br>
-
-✔ Delivery, professional setup and takedown for an additional fee
-
-</p>
-
-</div>
-
-<div class="card">
-
-<h3>💲 Affordable Daily Rentals</h3>
-
-<p>
-
-Every inflatable is rented on a daily basis.
-
-A refundable security deposit is required and will be returned once equipment is inspected and confirmed to be free of damage.
-
-</p>
-
-</div>
-
-</div>
-
-</section>
 
 
 
 <section id="rentals">
 
-<h2 class="section-title">Our Party Rentals</h2>
+
+<h2 class="section-title">
+Our Rentals
+</h2>
+
 
 <div class="cards">
 
 
+
 <div class="card">
 
-<h3>🏰 Bounce Castles</h3>
+<div class="image-placeholder">
+🎈
+</div>
+
+<h3>
+Bounce Castles
+</h3>
 
 <p>
 
-Choose from multiple inflatable castles perfect for birthdays, family events, and celebrations.
+Multiple inflatable castles available for birthdays, family gatherings, and celebrations.
 
-<br><br>
+</p>
 
-Available options include traditional bounce castles and larger units with exciting features.
+<strong>
+Starting at $175/day
+</strong>
 
-<br><br>
+</div>
 
-<strong>Starting at $175/day</strong>
+
+
+
+<div class="card">
+
+<div class="image-placeholder">
+💦
+</div>
+
+<h3>
+Water Slide Combos
+</h3>
+
+<p>
+
+Cool off during summer events with exciting inflatable water slide options.
+
+</p>
+
+<strong>
+Ages 2+
+</strong>
+
+</div>
+
+
+
+
+<div class="card">
+
+<div class="image-placeholder">
+🏃
+</div>
+
+<h3>
+Obstacle Course
+</h3>
+
+<p>
+
+A fun challenge for parties, schools, community events, and large gatherings.
 
 </p>
 
 </div>
 
 
-
+  
 <div class="card">
 
-<h3>💦 Water Slide Combos</h3>
+<div class="image-placeholder">
+🌀
+</div>
+
+<h3>
+Whacky Inflatable Whaling Arm
+</h3>
 
 <p>
 
-Make summer parties unforgettable!
-
-<br><br>
-
-Our inflatable water slide options are perfect for hot days, backyard parties, and outdoor events.
-
-<br><br>
-
-<strong>Ages 2+</strong>
+A unique attraction that brings laughs and excitement to any event.
 
 </p>
 
-</div>
-
-
-
-<div class="card">
-
-<h3>🏃 Obstacle Course</h3>
+<strong>
+$80/day
+</strong>
 
 <p>
-
-Challenge your guests with an exciting inflatable obstacle course!
-
-<br><br>
-
-Perfect for:
-
-<br>
-✔ Birthday parties
-
-<br>
-✔ School events
-
-<br>
-✔ Community events
-
-<br>
-✔ Large gatherings
-
-</p>
-
-</div>
-
-
-
-<div class="card">
-
-<h3>🌀 Whacky Inflatable Whaling Arm</h3>
-
-<p>
-
-Bring a unique attraction to your event!
-
-<br><br>
-
-Daily rental:
-
-<br>
-
-<strong>$80/day</strong>
-
-<br><br>
-
 Long-term rentals available. Contact us for customized pricing.
-
 </p>
 
 </div>
 
 
-</div>
-
-</section>
-
-  <section>
-
-<h2 class="section-title">Photo Gallery</h2>
-
-<div class="cards">
 
 <div class="card">
 
-<img src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?auto=format&fit=crop&w=800&q=80"
-style="width:100%;border-radius:15px;">
-
-<h3>🎈 Bounce Castles</h3>
-
-<p>
-Fun inflatable rentals for birthdays and celebrations.
-</p>
-
+<div class="image-placeholder">
+🎬
 </div>
 
-
-<div class="card">
-
-<img src="https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?auto=format&fit=crop&w=800&q=80"
-style="width:100%;border-radius:15px;">
-
-<h3>💦 Water Slides</h3>
-
-<p>
-Perfect for summer parties and outdoor events.
-</p>
-
-</div>
-
-
-<div class="card">
-
-<img src="https://images.unsplash.com/photo-1531058020387-3be344556be6?auto=format&fit=crop&w=800&q=80"
-style="width:100%;border-radius:15px;">
-
-<h3>🎬 Movie Nights</h3>
-
-<p>
-Create unforgettable backyard movie experiences.
-</p>
-
-</div>
-
-</div>
-
-</section>
-
-
-<section id="movie">
-
-<div class="card">
-<h3>🎬 Outdoor Movie Theatre Package</h3>
+<h3>
+Outdoor Movie Theatre
+</h3>
 
 <p>
 
-Create the ultimate backyard movie night experience!
-
-<br><br>
+Create an unforgettable movie night experience.
 
 Includes:
 
-<br>
-✔ 20ft inflatable movie screen
+<br><br>
+
+✔ 20ft inflatable screen
 
 <br>
-✔ Projector with Wi-Fi & Bluetooth capability
+✔ Wi-Fi & Bluetooth projector
 
 <br>
 ✔ Two inflatable couches
@@ -535,61 +303,138 @@ Includes:
 <br>
 ✔ Outdoor rug
 
-<br><br>
-
-Package Price:
-
-<strong>$400/day</strong>
-
-<br><br>
-
-Additional inflatable couches available:
-
-<strong>$25 each</strong>
-
 </p>
+
+<strong>
+$400/day
+</strong>
 
 </div>
-  
-<p style="max-width:900px;margin:auto;font-size:1.1rem;">
 
-Turn your backyard into your own outdoor theatre!
-
-Our Movie Night Package includes a giant inflatable movie screen, HD projector with Bluetooth and Wi-Fi capability, inflatable seating, and an outdoor rug to complete the experience.
-
-Perfect for birthdays, camping, graduations, sports nights, family movie nights and neighbourhood gatherings.
-
-<br><br>
-
-Choose self-setup with easy instructions or let us handle the setup and takedown for an additional fee.
-
-</p>
 
 </div>
 
 </section>
 
-<section>
 
-<h2 class="section-title">Movie Night Add-Ons</h2>
+
+
+
+
+
+<section class="why">
+
+
+<h2 class="section-title">
+Why Choose JK'in Around?
+</h2>
+
 
 <div class="cards">
 
+
 <div class="card">
 
-<h3>🍿 Movie Night Snack Package</h3>
+<h3>
+⭐ Locally Owned
+</h3>
+
+<p>
+Proudly serving Listowel, North Perth, and surrounding communities.
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>
+🧼 Clean Equipment
+</h3>
+
+<p>
+Our rentals are prepared and maintained with safety and cleanliness in mind.
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>
+🚚 Flexible Setup
+</h3>
+
+<p>
+Choose customer setup instructions or add professional setup and takedown.
+</p>
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<section id="movie" class="movie">
+
+
+<h2>
+🎬 Outdoor Movie Nights
+</h2>
+
 
 <p>
 
-Make movie night even better!
+Bring the theatre experience right to your backyard!
 
-<br><br>
+</p>
 
-Add our snack package for:
 
-<strong>$50</strong>
+<div class="movie-box">
 
-<br><br>
+
+<h3>
+Movie Night Package - $400
+</h3>
+
+
+<p>
+
+Includes:
+
+<br>
+✔ Massive inflatable projector screen
+
+<br>
+✔ Projector with Wi-Fi & Bluetooth
+
+<br>
+✔ Two inflatable couches
+
+<br>
+✔ Outdoor rug
+
+</p>
+
+
+
+<h3>
+🍿 Snack Package Add-On - $50
+</h3>
+
+
+<p>
 
 Includes:
 
@@ -600,260 +445,199 @@ Includes:
 ✔ 2 bags of candy
 
 <br>
-✔ 1 bag of chips
+✔ Bag of chips
 
 <br>
 ✔ 3 chocolate bars
 
 <br>
-✔ 2L bottle of pop
+✔ 2L pop
 
 </p>
 
-</div>
 
-</div>
-
-</section>
-
-<section>
-
-<h2 class="section-title">Rental Information</h2>
-
-<div class="cards">
-
-<div class="card">
-
-<h3>📅 Daily Rentals</h3>
 
 <p>
 
-Equipment is rented on a daily basis.
-
-Longer rental periods may be available upon request.
+Additional inflatable couches available for $25 each.
 
 </p>
 
-</div>
-
-<div class="card">
-
-<h3>💳 Security Deposit</h3>
-
-<p>
-
-A refundable security deposit is required for every rental.
-
-Deposits are returned after equipment has been inspected for damage.
-
-</p>
 
 </div>
 
-<div class="card">
-
-<h3>📄 Rental Agreement</h3>
-
-<p>
-
-All customers must sign a rental agreement and liability waiver before pickup or delivery.
-
-</p>
-
-</div>
-
-</div>
-
-</section>
-<section>
-
-<h2 class="section-title">Delivery Area</h2>
-
-<div class="card">
-
-<p style="text-align:center;font-size:1.1rem;">
-
-📍 JK'in Around Party Rentals proudly serves:
-
-<br><br>
-
-<strong>
-Listowel • North Perth • Atwood • Monkton • Milverton • Palmerston • Mitchell • Stratford and surrounding communities
-</strong>
-
-<br><br>
-
-Additional delivery fees may apply outside our standard service area.
-
-</p>
-
-</div>
-
-</section>
-
-
-
-<section>
-
-<h2 class="section-title">Frequently Asked Questions</h2>
-
-<div class="cards">
-
-
-<div class="card">
-
-<h3>How far in advance should I book?</h3>
-
-<p>
-
-We recommend booking early, especially for weekends and holiday dates. Availability is limited and rentals are reserved on a first-come basis.
-
-</p>
-
-</div>
-
-
-
-<div class="card">
-
-<h3>Do you provide setup?</h3>
-
-<p>
-
-Yes! Customers can choose self-setup instructions or add professional setup and takedown service for an additional fee.
-
-</p>
-
-</div>
-
-
-
-<div class="card">
-
-<h3>What happens to my deposit?</h3>
-
-<p>
-
-Your security deposit is returned once the rental equipment has been inspected and confirmed to be returned without damage.
-
-</p>
-
-</div>
-
-
-
-<div class="card">
-
-<h3>Do I need to sign anything?</h3>
-
-<p>
-
-Yes. Every rental requires a signed rental agreement and liability waiver before equipment is delivered or picked up.
-
-</p>
-
-</div>
-
-
-</div>
 
 </section>
 
 
 
 
-<section id="contact">
-
-<h2 class="section-title">Ready To Party?</h2>
 
 
-<div class="highlight">
-
-<h2>Request Your Quote Today!</h2>
-
-<p>
-Tell us about your event and we will get back to you with availability and pricing.
-</p>
-
-<br>
 
 
-<form action="https://formsubmit.co/info@jkinaroundpartyrentals.com" method="POST" style="max-width:600px;margin:auto;text-align:left;">
+<section id="gallery">
+
+
+<h2 class="section-title">
+Gallery
+</h2>
+
+
+<div class="gallery">
+
+
+<div>
+🎈
+<p>Bounce Castles</p>
+</div>
+
+
+<div>
+💦
+<p>Water Slides</p>
+</div>
+
+
+<div>
+🏃
+<p>Obstacle Course</p>
+</div>
+
+
+<div>
+🎬
+<p>Movie Nights</p>
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<section id="quote">
+
+
+<h2 class="section-title">
+Request Your Quote
+</h2>
+
+
+<div class="form-box">
+
+
+<form action="https://formsubmit.co/info@jkinaroundpartyrentals.com" method="POST">
 
 
 <input type="hidden" name="_subject" value="New JK'in Around Party Rentals Quote Request">
 
 
-<label>Name:</label>
 
-<input type="text" name="name" required style="width:100%;padding:12px;margin:8px 0;">
-
-
-<label>Phone Number:</label>
-
-<input type="tel" name="phone" required style="width:100%;padding:12px;margin:8px 0;">
+<input type="text" name="name" placeholder="Your Name" required>
 
 
-<label>Email:</label>
 
-<input type="email" name="email" required style="width:100%;padding:12px;margin:8px 0;">
-
-
-<label>Event Date:</label>
-
-<input type="date" name="event date" required style="width:100%;padding:12px;margin:8px 0;">
+<input type="tel" name="phone" placeholder="Phone Number" required>
 
 
-<label>Event Location:</label>
 
-<input type="text" name="location" required style="width:100%;padding:12px;margin:8px 0;">
+<input type="email" name="email" placeholder="Email Address" required>
 
 
-<label>What would you like to rent?</label>
 
-<select name="rental" style="width:100%;padding:12px;margin:8px 0;">
+<input type="date" name="date" required>
+
+
+
+<input type="text" name="location" placeholder="Event Location" required>
+
+
+
+<select name="rental">
+
+<option>Choose Rental</option>
 
 <option>Bounce Castle</option>
 
-<option>Bounce Castle with Waterslide</option>
+<option>Water Slide Combo</option>
 
 <option>Obstacle Course</option>
 
-<option>Whacky Inflatable Whaling Arm</option>
+<option>Whaling Arm</option>
 
-<option>Outdoor Movie Theatre Package</option>
+<option>Movie Theatre Package</option>
 
-<option>Multiple Items / Event Package</option>
+<option>Multiple Rentals</option>
 
 </select>
 
 
-<label>Setup Preference:</label>
 
-<select name="setup" style="width:100%;padding:12px;margin:8px 0;">
+<select name="setup">
+
+<option>Setup Preference</option>
 
 <option>Customer Setup Instructions</option>
 
 <option>JK'in Around Setup & Takedown</option>
 
-<option>Not Sure - Please Help</option>
+<option>Need Help Deciding</option>
 
 </select>
 
 
-<label>Additional Details:</label>
 
-<textarea name="message" rows="5" style="width:100%;padding:12px;margin:8px 0;"></textarea>
+<textarea name="message" placeholder="Tell us about your event"></textarea>
 
 
-<button type="submit" class="button" style="border:none;cursor:pointer;">
 
-Send Request
-
+<button class="btn primary">
+Send Quote Request
 </button>
 
 
 </form>
+
+
+</div>
+
+
+</section>
+
+  
+<section class="contact">
+
+
+<h2 class="section-title">
+Contact JK'in Around
+</h2>
+
+
+<p>
+Ready to plan your party? Reach out and let's make it happen!
+</p>
+
+
+<div class="contact-buttons">
+
+
+<a href="tel:5194976538" class="btn primary">
+📞 Call/Text 519-497-6538
+</a>
+
+
+<a href="mailto:info@jkinaroundpartyrentals.com" class="btn secondary">
+✉️ Email Us
+</a>
+
 
 </div>
 
@@ -862,17 +646,66 @@ Send Request
 
 
 
+
+
+
 <footer>
 
-<h3>🎉 JK'in Around Party Rentals</h3>
 
-<p>Bringing the Party to You!</p>
+<div class="footer-logo">
 
-<p>Serving Listowel, North Perth & Surrounding Communities</p>
+JK'in Around
 
-<p>© 2026 JK'in Around Party Rentals. All Rights Reserved.</p>
+<small>
+PARTY RENTALS
+</small>
+
+</div>
+
+
+<p>
+🎈 Making Memories One Party At A Time
+</p>
+
+
+<p>
+Serving Listowel, North Perth & Surrounding Communities
+</p>
+
+
+<p>
+📞 519-497-6538
+</p>
+
+
+<p>
+✉️ info@jkinaroundpartyrentals.com
+</p>
+
+
+<p class="copyright">
+
+© 2026 JK'in Around Party Rentals. All Rights Reserved.
+
+</p>
+
 
 </footer>
+
+
+
+
+
+
+<a href="#home" class="top-button">
+↑
+</a>
+
+
+
+
+
+<script src="script.js"></script>
 
 
 </body>
