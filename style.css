@@ -886,3 +886,10 @@ section {
 
 
 }
+
+
+.rental-image:has(img[src*="WhackyMan"]) {
+
+    height:350px;
+
+}
