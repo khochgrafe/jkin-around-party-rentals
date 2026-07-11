@@ -1,34 +1,31 @@
-// JK'in Around Party Rentals
-// Website scripts
+document.addEventListener("DOMContentLoaded", function () {
 
 
-document.addEventListener("DOMContentLoaded", function() {
+    const sections = document.querySelectorAll(".section");
 
 
-    const sections = document.querySelectorAll("section");
+    const observer = new IntersectionObserver(function(entries) {
 
 
-    const observer = new IntersectionObserver(
+        entries.forEach(function(entry) {
 
-        function(entries) {
 
-            entries.forEach(function(entry) {
+            if (entry.isIntersecting) {
 
-                if (entry.isIntersecting) {
+                entry.target.classList.add("visible");
 
-                    entry.target.classList.add("visible");
+            }
 
-                }
 
-            });
+        });
 
-        },
 
-        {
-            threshold: 0.15
-        }
+    }, {
 
-    );
+        threshold: 0.15
+
+    });
+
 
 
     sections.forEach(function(section) {
