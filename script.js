@@ -1,51 +1,43 @@
 // JK'in Around Party Rentals
-// Website interactions
+// Website scripts
 
 
-// Fade in sections as visitors scroll
-
-const sections = document.querySelectorAll("section");
+document.addEventListener("DOMContentLoaded", function() {
 
 
-const observer = new IntersectionObserver(
-(entries) => {
+    const sections = document.querySelectorAll("section");
 
-    entries.forEach(entry => {
 
-        if(entry.isIntersecting){
+    const observer = new IntersectionObserver(
 
-            entry.target.style.opacity = "1";
-            entry.target.style.transform = "translateY(0)";
+        function(entries) {
 
+            entries.forEach(function(entry) {
+
+                if (entry.isIntersecting) {
+
+                    entry.target.classList.add("visible");
+
+                }
+
+            });
+
+        },
+
+        {
+            threshold: 0.15
         }
+
+    );
+
+
+    sections.forEach(function(section) {
+
+        section.classList.add("fade-section");
+
+        observer.observe(section);
 
     });
 
-},
-{
-    threshold: 0.15
-});
-
-
-
-sections.forEach(section => {
-
-    section.style.opacity = "0";
-
-    section.style.transform = "translateY(30px)";
-
-    section.style.transition = "all .8s ease";
-
-    observer.observe(section);
 
 });
-
-
-
-
-
-// Update year automatically in footer if needed
-
-const year = new Date().getFullYear();
-
-console.log("JK'in Around Party Rentals website loaded - " + year);
