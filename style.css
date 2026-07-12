@@ -647,3 +647,17 @@ footer {
 
 }
 
+.service-area{
+
+    margin-top:35px;
+
+    font-size:1.2rem;
+
+    font-weight:600;
+
+    color:#fff;
+
+    text-shadow:1px 1px 5px rgba(0,0,0,.4);
+
+}
+
