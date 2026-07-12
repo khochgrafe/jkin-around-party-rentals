@@ -76,21 +76,37 @@ line-height:1;
 
 .logo-main{
 
-font-size:3rem;
+font-family:'Fredoka',sans-serif;
 
-font-weight:900;
+font-size:3.4rem;
 
-color:white;
+font-weight:700;
+
+color:#ffffff;
 
 letter-spacing:2px;
 
 text-shadow:
 
-3px 3px 0 #0057b8,
+-2px -2px 0 #0057b8,
 
-6px 6px 12px rgba(0,0,0,.35);
+2px -2px 0 #0057b8,
 
-font-family:"Trebuchet MS",sans-serif;
+-2px 2px 0 #0057b8,
+
+2px 2px 0 #0057b8,
+
+5px 5px 14px rgba(0,0,0,.35);
+
+transform:rotate(-2deg);
+
+transition:.3s;
+
+}
+
+.logo-main:hover{
+
+transform:rotate(0deg) scale(1.05);
 
 }
 
