@@ -62,33 +62,53 @@ body {
 
 
 
-.logo {
+.logo{
 
-    display:flex;
+display:flex;
 
-    flex-direction:column;
+flex-direction:column;
 
-    font-weight:bold;
-
-}
-
-
-
-.logo span {
-
-    font-size:2rem;
-
-    letter-spacing:1px;
+line-height:1;
 
 }
 
 
 
-.logo small {
+.logo-main{
 
-    color:#ffd700;
+font-size:3rem;
 
-    font-size:1rem;
+font-weight:900;
+
+color:white;
+
+letter-spacing:2px;
+
+text-shadow:
+
+3px 3px 0 #0057b8,
+
+6px 6px 12px rgba(0,0,0,.35);
+
+font-family:"Trebuchet MS",sans-serif;
+
+}
+
+
+
+.logo-sub{
+
+font-size:1.2rem;
+
+font-weight:bold;
+
+color:#ffd700;
+
+letter-spacing:3px;
+
+margin-top:4px;
+
+text-transform:uppercase;
 
 }
 
