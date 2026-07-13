@@ -75,6 +75,14 @@ rentalButtons.forEach(button => {
             quoteTitle.textContent = "🎉 Requesting a Quote for: " + rental;
         }
 
+        const quoteMessage = document.getElementById("quoteMessage");
+
+        if(quoteMessage){
+
+        quoteMessage.textContent = "Great choice! Complete the form below and we will help build the perfect package for your event.";
+
+        }
+
     });
 
 });
