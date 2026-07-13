@@ -58,3 +58,23 @@ rentalSelect.value = rental;
 });
 
 });
+
+const quoteTitle = document.getElementById("quoteTitle");
+
+rentalButtons.forEach(button => {
+
+    button.addEventListener("click", function(){
+
+        const rental = this.dataset.rental;
+
+        if(rentalSelect){
+            rentalSelect.value = rental;
+        }
+
+        if(quoteTitle){
+            quoteTitle.textContent = "🎉 Requesting a Quote for: " + rental;
+        }
+
+    });
+
+});
