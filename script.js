@@ -71,17 +71,20 @@ rentalButtons.forEach(button => {
             rentalSelect.value = rental;
         }
 
-        if(quoteTitle){
-            quoteTitle.textContent = "🎉 Requesting a Quote for: " + rental;
-        }
+       if(quoteTitle){
 
-        const quoteMessage = document.getElementById("quoteMessage");
+quoteTitle.textContent = "🎉 Requesting a Quote for: " + rental;
 
-        if(quoteMessage){
+}
 
-        quoteMessage.textContent = "Great choice! Complete the form below and we will help build the perfect package for your event.";
 
-        }
+const quoteMessage = document.getElementById("quoteMessage");
+
+if(quoteMessage){
+
+quoteMessage.textContent = "Great choice! Complete the form below and we will help build the perfect package for your event.";
+
+}
 
     });
 
