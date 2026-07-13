@@ -38,3 +38,23 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 });
+
+const rentalButtons = document.querySelectorAll(".rental-btn");
+
+const rentalSelect = document.getElementById("rentalSelect");
+
+rentalButtons.forEach(button => {
+
+button.addEventListener("click", function(){
+
+const rental = this.dataset.rental;
+
+if(rentalSelect){
+
+rentalSelect.value = rental;
+
+}
+
+});
+
+});
