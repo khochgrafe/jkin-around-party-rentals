@@ -696,3 +696,148 @@ font-weight:600;
     font-weight:600;
 
 }
+
+.gallery-image{
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+
+.gallery-image:hover{
+
+    transform:scale(1.03);
+
+}
+
+
+
+
+.lightbox{
+
+    display:none;
+
+    position:fixed;
+
+    z-index:9999;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:100%;
+
+    background:rgba(0,0,0,.9);
+
+    align-items:center;
+
+    justify-content:center;
+
+}
+
+
+
+.lightbox img{
+
+    max-width:90%;
+
+    max-height:85%;
+
+    border-radius:15px;
+
+}
+
+
+
+.close-lightbox{
+
+    position:absolute;
+
+    top:25px;
+
+    right:40px;
+
+    color:white;
+
+    font-size:50px;
+
+    cursor:pointer;
+
+}
+
+
+
+.prev,
+.next{
+
+    position:absolute;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+    color:white;
+
+    font-size:50px;
+
+    cursor:pointer;
+
+    padding:20px;
+
+}
+
+
+
+.prev{
+
+    left:30px;
+
+}
+
+
+
+.next{
+
+    right:30px;
+
+}
+
+
+
+.prev:hover,
+.next:hover,
+.close-lightbox:hover{
+
+    color:#ffd700;
+
+}
+
+
+
+@media(max-width:768px){
+
+    .prev{
+
+        left:5px;
+
+    }
+
+
+    .next{
+
+        right:5px;
+
+    }
+
+
+    .close-lightbox{
+
+        right:15px;
+
+    }
+
+}
