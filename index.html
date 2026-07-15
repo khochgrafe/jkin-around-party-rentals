@@ -635,22 +635,33 @@ Tell us about your event and we will help create the perfect package for your pa
 </p>
 
 
-<form class="quote-form">
+<form
+    class="quote-form"
+    action="https://formsubmit.co/info@jkinaroundpartyrentals.com"
+    method="POST">
+  
+<input type="hidden" name="_subject" value="New Quote Request - JK'in Around Party Rentals">
+
+<input type="hidden" name="_captcha" value="false">
+
+<input type="hidden" name="_template" value="table">
+
+<input type="text" name="_honey" style="display:none">
 
 
-<input type="text" placeholder="Your Name" required>
+<input type="text" name="Name" placeholder="Your Name" required>
 
 
-<input type="tel" placeholder="Phone Number" required>
+<input type="tel" name="Phone" placeholder="Phone Number" required>
 
 
-<input type="email" placeholder="Email Address" required>
+<input type="email" name="Email" placeholder="Email Address" required>
 
 
-<input type="date">
+<input type="date" name="Event Date">
 
 
-<select id="rentalSelect">
+<select id="rentalSelect" name="Requested Rental">
 
 <option>Select Rental</option>
 
@@ -684,12 +695,13 @@ Additional Rentals (optional)
 
 <textarea
 id="additionalRentals"
+name="Additional Rentals"
 placeholder="Interested in a package or multiple rentals? Let us know what items you'd like to combine and we’ll create a custom quote for you.">
 </textarea>
 
 <label>Setup Preference</label>
 
-<select>
+<select name="Setup Preference">
 
 <option>Customer Setup (Starting Price)</option>
 
@@ -697,9 +709,10 @@ placeholder="Interested in a package or multiple rentals? Let us know what items
 
 </select>
 
-<textarea placeholder="Event location, approximate guest count, any special requests, and any other details that will help us prepare your quote."></textarea>
-
-<button class="btn primary">
+<textarea
+name="Event Details"
+placeholder="Event location, approximate guest count, any special requests, and any other details that will help us prepare your quote."></textarea>
+<button type="submit" class="btn primary">
 Send Request
 </button>
 
