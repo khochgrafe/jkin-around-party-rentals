@@ -630,28 +630,22 @@ footer {
 
 @media(max-width:768px) {
 
-
-.navbar{
-
-display:flex;
-
-justify-content:space-between;
-
-align-items:center;
-
-padding:20px 8%;
-
-background:rgba(15,23,42,.45);
-
-backdrop-filter:blur(12px);
-
-position:sticky;
-
-top:0;
-
-z-index:1000;
-
+.navbar {
+    display: flex;
+    flex-direction: column !important; /* Stack elements neatly on mobile */
+    align-items: center;
+    justify-content: center;
+    padding: 10px !important;
+    background: #000000 !important;
+    height: auto !important;
 }
+
+.hero-logo-img {
+    height: 380px !important; /* Shrinks the huge image down so it fits phone displays */
+    margin-left: 0 !important;
+    margin-top: 0 !important;
+}
+
 
 
 
