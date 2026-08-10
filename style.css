@@ -61,12 +61,13 @@ body {
 }
 
 .hero-logo-img {
-    height: 220px !important;
+    height: 110px !important;
     width: auto;
     object-fit: contain;
     display: block;
-    transform: translateY(10px);
+    filter: invert(1) hue-rotate(180deg) brightness(1.2) contrast(1.2);
 }
+
 
 
 
