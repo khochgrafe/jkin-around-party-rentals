@@ -1009,3 +1009,41 @@ border-radius:999px;
 backdrop-filter:blur(8px);
 
 }
+
+
+@media (max-width: 768px) {
+
+    #rentals {
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        height: auto !important;
+        min-height: 100px !important;
+        overflow: visible !important;
+    }
+
+    #rentals .rental-grid {
+        display: grid !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        height: auto !important;
+        min-height: 100px !important;
+        overflow: visible !important;
+        grid-template-columns: 1fr !important;
+    }
+
+    #rentals .rental-card {
+        display: flex !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        height: auto !important;
+        min-height: 300px !important;
+    }
+
+    #rentals .rental-card img {
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+    }
+
+}
