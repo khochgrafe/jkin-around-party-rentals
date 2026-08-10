@@ -28,13 +28,16 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-    sections.forEach(function(section) {
+   sections.forEach(function(section) {
 
+    if (section.id === "rentals") {
+        section.classList.add("visible");
+    } else {
         section.classList.add("fade-section");
-
         observer.observe(section);
+    }
 
-    });
+});
 
 
 });
