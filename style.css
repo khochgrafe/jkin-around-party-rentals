@@ -632,7 +632,7 @@ footer {
 
 .navbar {
     display: flex;
-    flex-direction: column !important; /* Stack elements neatly on mobile */
+    flex-direction: column !important;
     align-items: center;
     justify-content: center;
     padding: 10px !important;
@@ -641,10 +641,16 @@ footer {
 }
 
 .hero-logo-img {
-    height: 380px !important; /* Shrinks the huge image down so it fits phone displays */
+    height: 380px !important;
     margin-left: 0 !important;
     margin-top: 0 !important;
 }
+
+/* Pushes the main screen text downward below the deeper header banner */
+.hero {
+    padding-top: 150px !important;
+}
+
 
 
 
