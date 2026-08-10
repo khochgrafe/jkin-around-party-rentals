@@ -1047,3 +1047,9 @@ backdrop-filter:blur(8px);
     }
 
 }
+
+#rentals {
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: none !important;
+}
