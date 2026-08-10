@@ -44,30 +44,30 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 4%;
+    padding: 10px 5%;
     background: #000000 !important;
     position: sticky;
     top: 0;
     z-index: 1000;
     box-sizing: border-box;
     width: 100%;
+    height: 140px;
 }
 
 .logo {
     display: flex;
     align-items: center;
-    justify-content: center;
-    height: 140px;
-    margin: 5px 0;
+    height: 100%;
 }
 
 .hero-logo-img {
-    height: 160px !important;
+    height: 220px !important;
     width: auto;
     object-fit: contain;
-    mix-blend-mode: screen !important;
     display: block;
+    transform: translateY(10px);
 }
+
 
 
 
