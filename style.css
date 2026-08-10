@@ -41,40 +41,34 @@ body {
 
 
 .navbar {
-
-    display:flex;
-
-    justify-content:space-between;
-
-    align-items:center;
-
-    padding:25px 8%;
-
-    background:rgba(0,0,0,.25);
-
-    position:sticky;
-
-    top:0;
-
-    z-index:100;
-
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 4%;
+    background: #000000 !important;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-sizing: border-box;
+    width: 100%;
 }
 
-
-
-.logo{
-
-display:flex;
-
-flex-direction:column;
-
-justify-content:center;
-
-align-items:flex-start;
-
-line-height:1;
-
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 140px;
+    margin: 5px 0;
 }
+
+.hero-logo-img {
+    height: 160px !important;
+    width: auto;
+    object-fit: contain;
+    mix-blend-mode: screen !important;
+    display: block;
+}
+
 
 
 
